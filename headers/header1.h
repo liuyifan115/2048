@@ -9,7 +9,15 @@
 
 #define llu unsigned long long
 
+struct settings{
+    int enableScore;
+    int numberNum;
+};
+
 extern llu field[4][4];
+extern llu score;
+extern struct settings setting;
+
 
 int processing(int);
 void outPut();
@@ -18,5 +26,6 @@ int getInput();
 void help();
 void settings();
 int judge(int);
+llu getScore();
 
 #endif //INC_2048_HEADER1_H

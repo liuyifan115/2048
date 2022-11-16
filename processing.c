@@ -240,3 +240,13 @@ int processing(int input) {
     }
     return 0;
 }
+
+llu getScore(){
+    llu score=0;
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            score+=field[i][j];
+        }
+    }
+    return score;
+}

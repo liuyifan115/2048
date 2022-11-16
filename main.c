@@ -4,14 +4,17 @@
 #include "headers/header1.h"
 
 llu field[4][4]={};
+llu score=0;
 
 int main() {
     int input=0;
     int status=0;
     generateNumber();
     system("cls");
+    score=getScore();
     outPut();
     while (1){
+        score=getScore();
         input=getInput();
         if (input!='+'){
             if (input=='h'){
@@ -23,6 +26,7 @@ int main() {
                 continue;
             }
             status=processing(input);
+
             if (status==-1||status==1){
                 system("cls");
                 outPut();
